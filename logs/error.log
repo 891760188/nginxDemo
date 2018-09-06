@@ -1,0 +1,12 @@
+2018/09/05 16:48:24 [error] 12436#13996: *1 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2018/09/05 17:12:00 [emerg] 6780#7248: no "events" section in configuration
+2018/09/05 17:12:31 [emerg] 6368#6512: no "events" section in configuration
+2018/09/05 17:13:00 [notice] 2792#9112: signal process started
+2018/09/05 17:13:08 [error] 11744#13040: *4 "D:/data/www/index.html" is not found (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2018/09/05 17:13:46 [notice] 5896#3148: signal process started
+2018/09/05 17:13:51 [crit] 4016#9056: *7 GetFileAttributesEx() "D:\06_hBuilderWorkspace\LayuiDemo
+ginxData\www" failed (123: The filename, directory name, or volume label syntax is incorrect), client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2018/09/05 17:14:18 [notice] 8100#12188: signal process started
+2018/09/05 17:17:30 [notice] 10880#7520: signal process started
+2018/09/05 17:17:44 [error] 13988#4204: *13 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/www/images" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /images HTTP/1.1", host: "localhost"
+2018/09/05 17:17:51 [error] 13988#4204: *13 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/images/logo.png" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /images/logo.png HTTP/1.1", host: "localhost"
