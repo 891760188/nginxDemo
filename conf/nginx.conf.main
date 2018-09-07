@@ -1,0 +1,33 @@
+worker_processes  1;
+
+#几个顶级指令(称为上下文)  events – 一般连接处理；http – HTTP协议流量；mail – Mail协议流量；stream – TCP协议流量
+events {
+    worker_connections  1024;
+}
+
+# http 和 events 驻留在主上下文中  server在HTTP内，location在server内
+http {
+	#新服务(静态网站) server在HTTP内
+	#在另一个上下文(子上下文)中定义的上下文将继承父级中包含的伪指令的值。 要覆盖从父进程继承的值，请在子上下文中包含该指令
+    server { 
+        location / { #如果有几个匹配的location块，nginx将选择具有最长前缀来匹配location块
+            #root D:/06_hBuilderWorkspace/LayuiDemo/nginxData/www;
+			#proxy_pass http://localhost:8080/;
+			proxy_pass http://localhost:9000/;
+        }
+		location /images/ {
+            root D:/06_hBuilderWorkspace/LayuiDemo/nginxData;
+        }
+		#该参数是一个正则表达式，匹配所有以.gif，.jpg或.png结尾的URI。正则表达式之前应该是~字符。 相应的请求将映射到D:/06_hBuilderWorkspace/LayuiDemo/nginxData/images目录。
+		location ~ \.(gif|jpg|png)$ {
+			root D:/06_hBuilderWorkspace/LayuiDemo/nginxData/images;
+		}
+    }
+	 
+	#设置代理服务器 这意味着它可作为一个接收请求的服务器，将其传递给代理服务器，从代理服务器中检索响应，并将其发送给客户端
+	server {
+		listen 8080; #设置端口，默认80端口  语法   一个简单的指令由空格分隔的名称和参数组成，并以分号(;)结尾
+		#并将所有请求映射到本地文件系统上的D:/06_hBuilderWorkspace/LayuiDemo/nginxData/up1目录
+		root D:/06_hBuilderWorkspace/LayuiDemo/nginxData/up1;
+	}
+}

@@ -1,0 +1,6 @@
+127.0.0.1 - - [07/Sep/2018:10:34:35 +0800] "GET /images/images/logo.jpg HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:10:34:48 +0800] "GET /images/logo.jpg HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:10:36:11 +0800] "GET /images/logo.jpg HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:10:36:33 +0800] "GET /images/images/logo.jpg HTTP/1.1" 200 122022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:10:39:23 +0800] "GET /images/images/logo.jpg HTTP/1.1" 404 571 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:10:39:33 +0800] "GET /images/logo.jpg HTTP/1.1" 200 122022 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"

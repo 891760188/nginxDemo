@@ -34,3 +34,106 @@ ginxData\www" failed (123: The filename, directory name, or volume label syntax 
 2018/09/06 17:39:39 [error] 12164#7620: *73 directory index of "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/up1/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
 2018/09/06 17:41:25 [error] 12164#7620: *85 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://[::1]:8080/favicon.ico", host: "127.0.0.1", referrer: "http://127.0.0.1/demo.html"
 2018/09/06 17:41:25 [error] 12164#7620: *91 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/up1/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.0", host: "localhost:8080", referrer: "http://127.0.0.1/demo.html"
+2018/09/06 19:16:06 [error] 12164#7620: *92 directory index of "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/up1/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2018/09/06 19:21:03 [notice] 15828#772: signal process started
+2018/09/06 19:27:28 [error] 15864#14864: *108 directory index of "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/up1/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:8080"
+2018/09/06 19:29:54 [emerg] 18928#13456: invalid host in upstream "http://localhost:9000/" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:15
+2018/09/06 19:30:48 [notice] 3896#19140: signal process started
+2018/09/06 19:30:54 [error] 18848#13908: *122 upstream sent unsupported FastCGI protocol version: 72 while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /api/file/download.file HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2018/09/06 19:31:28 [error] 18848#13908: *122 upstream sent unsupported FastCGI protocol version: 72 while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /api/file/download.file HTTP/1.1", upstream: "fastcgi://[::1]:9000", host: "localhost"
+2018/09/06 19:32:30 [notice] 15124#17344: signal process started
+2018/09/06 19:33:05 [error] 18924#18984: *128 upstream sent unsupported FastCGI protocol version: 72 while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /api/file/download.file HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2018/09/06 19:33:49 [emerg] 16928#15080: invalid host in upstream "http://localhost:9000/" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:15
+2018/09/06 19:35:23 [emerg] 16988#10260: invalid host in upstream "http://localhost:9000" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:15
+2018/09/06 19:35:41 [notice] 500#16524: signal process started
+2018/09/06 19:35:45 [error] 15024#18812: *132 upstream sent unsupported FastCGI protocol version: 72 while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /api/file/download.file HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2018/09/06 19:36:03 [notice] 15992#6472: signal process started
+2018/09/06 19:36:07 [error] 18848#18708: *136 upstream sent unsupported FastCGI protocol version: 72 while reading response header from upstream, client: 127.0.0.1, server: , request: "GET /api/file/download.file HTTP/1.1", upstream: "fastcgi://127.0.0.1:9000", host: "localhost"
+2018/09/06 19:36:40 [notice] 16420#19056: signal process started
+2018/09/06 19:37:09 [emerg] 14676#7164: invalid URL prefix in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:15
+2018/09/06 19:37:19 [notice] 19236#19248: signal process started
+2018/09/06 19:43:40 [notice] 16172#15668: signal process started
+2018/09/06 20:12:51 [notice] 13500#18264: signal process started
+2018/09/06 20:14:40 [notice] 8132#19024: signal process started
+2018/09/06 20:14:43 [error] 1076#11452: *151 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/favicon.ico" failed (2: The system cannot find the file specified), client: 192.168.0.101, server: , request: "GET /favicon.ico HTTP/1.1", host: "192.168.0.101:8080", referrer: "http://192.168.0.101:8080/"
+2018/09/06 20:14:55 [notice] 4000#13536: signal process started
+2018/09/06 20:15:09 [error] 13780#6048: *153 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:8080", referrer: "http://127.0.0.1:8080/"
+2018/09/06 20:20:27 [emerg] 18488#14084: host not found in "default" of the "listen" directive in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:17
+2018/09/06 20:24:26 [notice] 13052#8372: signal process started
+2018/09/06 20:33:16 [notice] 6084#19232: signal process started
+2018/09/06 20:34:47 [notice] 13548#14672: signal process started
+2018/09/06 20:35:13 [error] 10436#19296: *160 directory index of "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/www/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1"
+2018/09/06 20:35:55 [notice] 18004#17628: signal process started
+2018/09/06 20:36:18 [notice] 16060#10040: signal process started
+2018/09/06 20:36:56 [notice] 2332#17048: signal process started
+2018/09/06 20:37:27 [notice] 16704#19352: signal process started
+2018/09/07 10:31:37 [notice] 10132#8864: signal process started
+2018/09/07 10:31:37 [error] 10132#8864: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/07 10:31:55 [notice] 9148#11272: signal process started
+2018/09/07 10:33:28 [notice] 1324#4112: signal process started
+2018/09/07 10:33:40 [error] 3292#14284: *9 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxDatalogo.jpg" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /images/logo.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 10:33:51 [error] 3292#14284: *9 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxDataimages/logo.jpg" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /images/images/logo.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 10:33:54 [error] 3292#14284: *9 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxDataimages/logo.jpg" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /images/images/logo.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 10:34:23 [notice] 8864#10132: signal process started
+2018/09/07 10:34:35 [error] 11144#5000: *13 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxDataimages/logo.jpg" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /images/images/logo.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 10:34:48 [error] 11144#5000: *13 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxDatalogo.jpg" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /images/logo.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 10:35:57 [notice] 13760#7824: signal process started
+2018/09/07 10:36:11 [error] 1220#9628: *17 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/logo.jpg" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /images/logo.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 10:37:23 [emerg] 9532#13200: "root" directive is duplicate, "alias" directive was specified earlier in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:29
+2018/09/07 10:39:08 [notice] 7144#6780: signal process started
+2018/09/07 10:39:23 [error] 5488#12476: *21 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/images/images/logo.jpg" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /images/images/logo.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 10:45:43 [notice] 7688#9832: signal process started
+2018/09/07 10:54:13 [emerg] 13464#13336: unexpected "}" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:39
+2018/09/07 10:54:49 [notice] 12936#12428: signal process started
+2018/09/07 10:57:08 [notice] 12568#13376: signal process started
+2018/09/07 10:59:19 [notice] 13736#2888: signal process started
+2018/09/07 10:59:48 [notice] 8876#2528: signal process started
+2018/09/07 10:59:58 [error] 3096#7968: *63 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:01 [error] 3096#7968: *63 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:29 [notice] 10564#13532: signal process started
+2018/09/07 11:00:37 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:39 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:40 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:41 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:42 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:42 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:43 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:00:43 [error] 5152#12944: *66 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:01:03 [notice] 1620#12152: signal process started
+2018/09/07 11:01:07 [error] 1912#7240: *69 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/404/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/404/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:01:10 [error] 1912#7240: *69 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/www/403/iii" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /www/403/iii HTTP/1.1", host: "localhost:801"
+2018/09/07 11:32:48 [notice] 5976#3208: signal process started
+2018/09/07 14:10:42 [notice] 16716#16720: signal process started
+2018/09/07 14:11:36 [notice] 17376#17380: signal process started
+2018/09/07 14:13:23 [notice] 6008#13760: signal process started
+2018/09/07 14:14:06 [notice] 1936#7884: signal process started
+2018/09/07 14:18:46 [notice] 12844#8404: signal process started
+2018/09/07 14:18:46 [emerg] 9220#9868: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/http://localhost:9000/api/file/test000.file" failed (123: The filename, directory name, or volume label syntax is incorrect)
+2018/09/07 14:21:38 [notice] 12040#15076: signal process started
+2018/09/07 14:24:58 [notice] 16900#10160: signal process started
+2018/09/07 14:25:36 [notice] 16632#14120: signal process started
+2018/09/07 14:27:48 [notice] 15960#920: signal process started
+2018/09/07 14:28:41 [notice] 2132#16188: signal process started
+2018/09/07 14:29:19 [notice] 6008#15528: signal process started
+2018/09/07 14:31:14 [notice] 3376#1396: signal process started
+2018/09/07 14:41:49 [notice] 13048#2344: signal process started
+2018/09/07 14:44:36 [warn] 6296#14124: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:60
+2018/09/07 14:44:36 [notice] 6296#14124: signal process started
+2018/09/07 14:44:36 [warn] 14196#7672: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:60
+2018/09/07 14:45:01 [warn] 17168#10160: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:60
+2018/09/07 14:45:01 [notice] 17168#10160: signal process started
+2018/09/07 14:45:01 [warn] 17060#15840: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:60
+2018/09/07 14:45:14 [warn] 15824#15644: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:59
+2018/09/07 14:45:14 [notice] 15824#15644: signal process started
+2018/09/07 14:45:14 [warn] 608#13760: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:59
+2018/09/07 14:45:52 [warn] 10520#15076: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:59
+2018/09/07 14:45:52 [notice] 10520#15076: signal process started
+2018/09/07 14:45:52 [warn] 3208#16576: duplicate MIME type "text/html" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:59
+2018/09/07 14:46:45 [notice] 1592#8404: signal process started
+2018/09/07 14:46:51 [error] 15820#9532: *149 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/www/x.js" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /www/x.js HTTP/1.1", host: "localhost:801", referrer: "http://localhost:801/www/index3.html"
+2018/09/07 14:48:02 [notice] 14104#12988: signal process started
+2018/09/07 14:52:52 [notice] 6172#14420: signal process started
+2018/09/07 14:53:15 [notice] 11896#13456: signal process started
+2018/09/07 15:05:42 [emerg] 11668#12428: host not found in upstream "backend" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:66
+2018/09/07 15:07:01 [notice] 16492#13168: signal process started
+2018/09/07 15:07:03 [notice] 17332#5212: signal process started

@@ -1,0 +1,5 @@
+127.0.0.1 - - [07/Sep/2018:14:42:23 +0800] "GET /www/index3.html HTTP/1.1" 200 157 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:14:46:12 +0800] "GET /www/index3.html HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:14:46:51 +0800] "GET /www/index3.html HTTP/1.1" 200 218 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:14:46:51 +0800] "GET /www/x.js HTTP/1.1" 404 633 "http://localhost:801/www/index3.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
+127.0.0.1 - - [07/Sep/2018:14:48:05 +0800] "GET /www/index3.html HTTP/1.1" 200 168 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"
