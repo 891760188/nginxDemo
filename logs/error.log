@@ -137,3 +137,36 @@ ginxData\www" failed (123: The filename, directory name, or volume label syntax 
 2018/09/07 15:05:42 [emerg] 11668#12428: host not found in upstream "backend" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:66
 2018/09/07 15:07:01 [notice] 16492#13168: signal process started
 2018/09/07 15:07:03 [notice] 17332#5212: signal process started
+2018/09/07 15:07:34 [error] 14584#16520: *163 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/www/index4.html" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /www/index4.html HTTP/1.1", host: "localhost:801"
+2018/09/07 15:08:21 [error] 14584#16520: *163 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/www/index34.html" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /www/index34.html HTTP/1.1", host: "localhost:801"
+2018/09/07 15:12:00 [notice] 17288#8968: signal process started
+2018/09/07 15:16:56 [notice] 15356#7636: signal process started
+2018/09/07 15:17:35 [notice] 724#10212: signal process started
+2018/09/07 15:17:37 [notice] 3976#16184: signal process started
+2018/09/07 15:19:35 [notice] 12052#17404: signal process started
+2018/09/07 15:20:03 [notice] 15992#6188: signal process started
+2018/09/07 15:21:55 [error] 6900#16820: *12 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/mulu/mulu/01/demo.html" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /mulu/01/demo.html HTTP/1.1", host: "localhost:801"
+2018/09/07 15:22:10 [notice] 14304#15408: signal process started
+2018/09/07 15:22:48 [notice] 13932#16884: signal process started
+2018/09/07 15:31:18 [notice] 10100#16448: signal process started
+2018/09/07 15:31:37 [error] 1540#6900: *26 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/nginxData/images/logo1.jpg" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /images/logo1.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 15:36:18 [error] 1540#6900: *29 rewrite or internal redirection cycle while internally redirecting to "/images2/logo.jpg", client: 127.0.0.1, server: , request: "GET /images2/logo1.jpg HTTP/1.1", host: "localhost:801"
+2018/09/07 15:36:57 [notice] 11892#800: signal process started
+2018/09/07 15:38:39 [notice] 12640#15268: signal process started
+2018/09/07 15:46:14 [notice] 9772#17180: signal process started
+2018/09/07 15:46:25 [notice] 8336#6256: signal process started
+2018/09/07 15:47:16 [notice] 16964#16808: signal process started
+2018/09/07 15:50:33 [emerg] 11528#11516: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 15:50:45 [emerg] 15432#8892: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 15:51:37 [emerg] 1328#872: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 15:52:16 [emerg] 5368#16440: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 15:52:38 [notice] 14684#13108: signal process started
+2018/09/07 15:53:18 [emerg] 14964#14680: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 15:53:29 [emerg] 4948#3440: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 15:53:54 [error] 12708#17364: *57 upstream timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while connecting to upstream, client: 127.0.0.1, server: , request: "GET /images3/logo1.jpg HTTP/1.1", upstream: "http://42.123.125.237:80/images3/logo1.jpg", host: "localhost:801"
+2018/09/07 15:54:21 [emerg] 16116#16952: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 15:55:12 [emerg] 6164#17328: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 16:13:36 [emerg] 16948#16988: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 16:13:52 [emerg] 16728#7280: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 16:13:54 [emerg] 9872#10740: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
+2018/09/07 16:13:55 [emerg] 7496#16224: "proxy_pass" cannot have URI part in location given by regular expression, or inside named location, or inside "if" statement, or inside "limit_except" block in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:84
