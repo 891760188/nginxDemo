@@ -1,0 +1,99 @@
+worker_processes  1;
+
+#几个顶级指令(称为上下文)  events – 一般连接处理；http – HTTP协议流量；mail – Mail协议流量；stream – TCP协议流量
+events {
+    worker_connections  1024;
+}
+
+# http 和 events 驻留在主上下文中  server在HTTP内，location在server内
+http {
+	#新服务(静态网站) server在HTTP内
+	#可以将多个server指令添加到http上下文中以定义多个虚拟服务器。
+    server { 
+	
+		#配置块通常包括一个listen指令，用于指定服务器侦听请求的IP地址和端口  如果没有包含listen指令，则“标准”端口为80/tcp，“default”端口为8000/tcp，具体取决于超级用户权限
+		#下面的示例显示了监听IP地址127.0.0.1和端口8080的服务器的配置 只能监听http://127.0.0.1:8080/和http://localhost:8080/的请求，如果省略一个地址，服务器将侦听所有地址
+		#listen 127.0.0.1:8080;
+		listen 80;
+		#server_name example.org www.example.org;
+		index index2.html demo.html;  #默认index.html   这边的顺序是从前到后
+		root D:/06_hBuilderWorkspace/LayuiDemo/nginxData/www ;
+		access_log  D:/09_software/54_nginx-1.13.9/nginx-1.13.9/logs/test01.log;
+    }
+	server {
+	
+		listen 801 ;
+	
+		location /images/ {
+			#alias D:/06_hBuilderWorkspace/LayuiDemo/nginxData/;  # 用alias没有把images拼接到硬盘地址，用root有
+			root D:/06_hBuilderWorkspace/LayuiDemo/nginxData/;    # 与该位置相关联的请求URI将附加到路径，以获取要提供的静态文件的全名 http://localhost:801/images/logo.jpg   -->>> D:/06_hBuilderWorkspace/LayuiDemo/nginxData/images/logo.jpg
+			access_log  D:/09_software/54_nginx-1.13.9/nginx-1.13.9/logs/test02.log;
+		}
+		
+		location / {  # =/ 是全匹配只有http://localhost:801/可以访问到   /  只要不以/images/开头的URI的请求都将被传递给代理的服务器 
+			proxy_pass http://www.example.com;
+		}
+		
+		#返回特定的状态码  
+		location /403/ { #返回404的状态码
+			return 403 ;
+		}
+		
+		location /301 {#返回的第一个参数是响应代码。可选的第二个参数可以是重定向的URL
+			return 301 http://www.example.com/moved/here;
+		}
+		#重写uri请求 rewrite
+		location /users/ {
+			rewrite ^/users/(.*)$ /show?user=$1 break;
+		}
+		#代理 替换json数据
+		location /api/ {   #sub_filter模块可以用在http, server, location模块中。主要作用就是查找替换文件字符。
+			proxy_pass http://localhost:9000/api/;  #这个地址拼接上api后面的内容，进行请求
+			sub_filter      aa   'bb'; #一行代码前面是需要替换的内容，后面单引号内是替换成的内容
+			sub_filter_once off; #意思是只查找并替换一次。on是开启此功能，off是关闭——默认值是on   on是替换一次，off是全文全部替换
+			sub_filter_types 'application/json'; #一行意思是选定查找替换文件类型为文本型。也可以不加此行，因为默认只查找文本型文件。
+			access_log  D:/09_software/54_nginx-1.13.9/nginx-1.13.9/logs/test03.log;
+		}
+		#替换json数据 替换文本数据
+		location /www/ {
+			root D:/06_hBuilderWorkspace/LayuiDemo/nginxData/;    
+			sub_filter      头部   '脚脚';
+			sub_filter_once on;
+			error_page 404 = /fetch$uri; #处理错误
+			access_log  D:/09_software/54_nginx-1.13.9/nginx-1.13.9/logs/test04.log;
+		}
+		location /fetch/ {
+			proxy_pass https://www.baidu.com/;
+		}
+		
+		location /mulu/ {
+			root D:/06_hBuilderWorkspace/LayuiDemo/nginxData;    
+			index demo3.html demo2.html #NGINX以指定的顺序搜索文件，并返回它找到的第一个文件。
+			autoindex on;
+		}
+		
+		location /images2/ {
+			root D:/06_hBuilderWorkspace/LayuiDemo/nginxData;    
+			try_files $uri /images2/logo1.jpg =500;  #执行uri路径，如果没有则获取后面的，如果还没有返回相应的状态值，后面的状态值可选
+		}
+		location /images3/ {
+			root D:/06_hBuilderWorkspace/LayuiDemo/nginxData;    
+			try_files $uri $uri/ @backend;  #如果原始URI和带有附加尾部斜线的URI都不能解析为现有文件或目录，则将请求重定向到将其传递给代理服务器的命名位置
+		}
+		location @backend {
+			proxy_pass http://127.0.0.1:9000/api/file/test000.file;
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
