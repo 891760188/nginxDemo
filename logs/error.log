@@ -211,3 +211,24 @@ ginxData\www" failed (123: The filename, directory name, or volume label syntax 
 2018/09/11 14:30:29 [emerg] 7028#8504: "log_format" directive is not allowed here in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:67
 2018/09/11 14:31:52 [emerg] 9352#4504: "log_format" directive is not allowed here in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:67
 2018/09/11 14:33:56 [notice] 13840#2816: signal process started
+2018/09/11 15:21:44 [notice] 15328#4356: signal process started
+2018/09/11 15:46:43 [notice] 2784#17112: signal process started
+2018/09/11 15:47:29 [notice] 15476#9152: signal process started
+2018/09/11 15:47:29 [error] 15476#9152: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:47:45 [notice] 10568#16440: signal process started
+2018/09/11 15:47:45 [error] 10568#16440: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:47:46 [notice] 13748#16948: signal process started
+2018/09/11 15:47:46 [error] 13748#16948: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:47:58 [notice] 2112#9204: signal process started
+2018/09/11 15:47:58 [error] 2112#9204: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:47:59 [notice] 16828#17352: signal process started
+2018/09/11 15:47:59 [error] 16828#17352: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:48:00 [notice] 17332#15184: signal process started
+2018/09/11 15:48:00 [error] 17332#15184: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:48:16 [notice] 9856#6308: signal process started
+2018/09/11 15:48:16 [error] 9856#6308: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:48:45 [notice] 16988#4576: signal process started
+2018/09/11 15:48:45 [error] 16988#4576: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2018/09/11 15:48:56 [notice] 2712#8092: signal process started
+2018/09/11 15:49:05 [notice] 16404#15984: signal process started
+2018/09/11 16:03:36 [notice] 9292#15460: signal process started

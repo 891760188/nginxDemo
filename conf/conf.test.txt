@@ -1,0 +1,280 @@
+# 用户 用户组
+user                              nobody nobody;
+# 表示工作进程的数量  可以根据CPU的核心数来设置
+worker_processes                  4;
+#为nginx工作进程改变打开最多文件描述符数目的限制
+worker_rlimit_nofile              51200;
+#错误日志    地址/日志等级
+error_log                         logs/error.log  notice;
+#主进程pid号
+pid                               /var/run/nginx.pid;
+
+#事件模块
+events {
+	#设置事件模型 Select、poll属于标准事件模型，如果当前系统不存在更有效的方法，nginx会选择select或poll
+  use                             epoll;
+	#工作进程的最大连接数
+  worker_connections              51200;
+
+}
+
+
+http {
+  #显示和隐藏版本号   隐藏
+  server_tokens                   off;
+	#解决css等文件到前端被当成 pian/txt 不被渲染
+  include                         mime.types;
+
+
+
+  proxy_redirect                off;
+
+  proxy_set_header              Host $host;
+
+  proxy_set_header              X-Real-IP $remote_addr;
+
+  proxy_set_header              X-Forwarded-For $proxy_add_x_forwarded_for;
+
+  client_max_body_size          20m;
+
+  client_body_buffer_size       256k;
+
+  proxy_connect_timeout         90;
+
+  proxy_send_timeout            90;
+
+  proxy_read_timeout            90;
+
+  proxy_buffer_size             128k;
+
+  proxy_buffers                 4 64k;
+
+  proxy_busy_buffers_size       128k;
+
+  proxy_temp_file_write_size    128k;
+
+
+
+  default_type                    application/octet-stream;
+
+  charset                         utf-8;
+
+  
+
+  client_body_temp_path           /var/tmp/client_body_temp 1 2;
+
+  proxy_temp_path                 /var/tmp/proxy_temp 1 2;
+
+  fastcgi_temp_path               /var/tmp/fastcgi_temp 1 2;
+
+  uwsgi_temp_path                 /var/tmp/uwsgi_temp 1 2;
+
+  scgi_temp_path                  /var/tmp/scgi_temp 1 2;
+
+
+
+  ignore_invalid_headers          on;
+
+  server_names_hash_max_size      256;
+
+  server_names_hash_bucket_size   64;
+
+  client_header_buffer_size       8k;
+
+  large_client_header_buffers     4 32k;
+
+  connection_pool_size            256;
+
+  request_pool_size               64k;
+
+
+
+  output_buffers                  2 128k;
+
+  postpone_output                 1460;
+
+
+
+  client_header_timeout           1m;
+
+  client_body_timeout             3m;
+
+  send_timeout                    3m;
+
+
+
+
+
+  log_format main                 '$server_addr $remote_addr [$time_local] $msec+$connection '
+
+                                  '"$request" $status $connection $request_time $body_bytes_sent "$http_referer" '
+
+                                  '"$http_user_agent" "$http_x_forwarded_for"';
+
+
+
+  open_log_file_cache               max=1000 inactive=20s min_uses=1 valid=1m;
+
+
+
+  access_log                      logs/access.log      main;
+
+  log_not_found                   on;
+
+
+
+
+
+  sendfile                        on;
+
+  tcp_nodelay                     on;
+
+  tcp_nopush                      off;
+
+
+
+  reset_timedout_connection       on;
+
+  keepalive_timeout               10 5;
+
+  keepalive_requests              100;
+
+
+
+
+
+  gzip                            on;
+
+  gzip_http_version               1.1;
+
+  gzip_vary                       on;
+
+  gzip_proxied                    any;
+
+  gzip_min_length                 1024;
+
+  gzip_comp_level                 6;
+
+  gzip_buffers                    16 8k;
+
+  gzip_proxied                    expired no-cache no-store private auth no_last_modified no_etag;
+
+  gzip_types                      text/plain application/x-javascript text/css application/xml application/json;
+
+  gzip_disable                    "MSIE [1-6]\.(?!.*SV1)";
+
+
+
+
+
+  upstream tomcat8080 {
+
+    ip_hash;
+
+
+
+    server                        172.16.100.103:8080 weight=1 max_fails=2;
+
+    server                        172.16.100.104:8080 weight=1 max_fails=2;
+
+    server                        172.16.100.105:8080 weight=1 max_fails=2;
+
+  }
+
+
+
+  server {
+
+    listen                        80;
+
+    server_name                   www.magedu.com;
+
+    # config_apps_begin
+
+    root                          /data/webapps/htdocs;
+
+    access_log                    /var/logs/webapp.access.log     main;
+
+    error_log                     /var/logs/webapp.error.log      notice;
+
+
+
+    location / {
+
+    
+
+      location ~* ^.*/favicon.ico$ {
+
+        root                      /data/webapps;
+
+        expires                   180d;
+
+        break;
+
+      }
+
+    
+
+      if ( !-f $request_filename ) {
+
+        proxy_pass                http://tomcat8080;
+
+        break;
+
+      }
+
+    }
+
+
+
+    error_page                    500 502 503 504  /50x.html;
+
+      location = /50x.html {
+
+      root                        html;
+
+    }
+
+  }
+
+
+
+  server {
+
+    listen                        8088;
+
+    server_name                   nginx_status;
+
+
+
+      location / {
+
+          access_log                  off;
+
+          deny                        all;
+
+          return                      503;
+
+      }
+
+
+
+      location /status {
+
+          stub_status                 on;
+
+          access_log                  off;
+
+          allow                       127.0.0.1;
+
+          allow                       172.16.100.71;
+
+          deny                        all;
+
+      }
+
+  }
+
+
+
+}
