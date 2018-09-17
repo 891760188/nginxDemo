@@ -1,0 +1,87 @@
+worker_processes  1;
+
+#几个顶级指令(称为上下文)  events – 一般连接处理；http – HTTP协议流量；mail – Mail协议流量；stream – TCP协议流量
+events {
+    worker_connections  1024;
+}
+
+# http 和 events 驻留在主上下文中  server在HTTP内，location在server内
+http {
+	
+	#如果不设置css文件就会被当作text/plain类型发送到浏览器。从而导致css文件服务显示
+	include mime.types;
+	default_type application/octet-stream;
+	
+	
+	
+	proxy_cache_path cache keys_zone=one:10m;
+	
+	server {
+		proxy_cache one;
+		listen 808 ;
+		#修改header字段，请使用proxy_set_header指令
+		location /api/ {   #sub_filter模块可以用在http, server, location模块中。主要作用就是查找替换文件字符。
+			#proxy_set_header Host $host;
+			proxy_set_header Host 'xxxxxxxx';
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header Accept-Encoding ""; #为了防止头域被传递给代理服务器，请将其设置为空字符串 ,这样，服务器获取不到这个字段的哈
+			proxy_pass http://localhost:9000/api/;  #这个地址拼接上api后面的内容，进行请求
+			sub_filter      aa   'bb'; #一行代码前面是需要替换的内容，后面单引号内是替换成的内容
+			sub_filter_once off; #意思是只查找并替换一次。on是开启此功能，off是关闭——默认值是on   on是替换一次，off是全文全部替换
+			sub_filter_types 'application/json'; #一行意思是选定查找替换文件类型为文本型。也可以不加此行，因为默认只查找文本型文件。
+			access_log  D:/09_software/54_nginx-1.13.9/nginx-1.13.9/logs/test03.log;
+		}
+		
+	}
+	
+	server {
+		proxy_cache one;
+		listen 888 ;
+		proxy_ignore_headers X-Accel-Expires Expires Cache-Control Set-Cookie;
+		proxy_hide_header Cache-Control;
+		proxy_hide_header Set-Cookie;
+		location /vxsp/ {  
+			proxy_pass http://127.0.0.1:8020/vxsp/;  
+			
+		}
+		
+	}
+	
+	log_format compression '$remote_addr - $remote_user [$time_local] '   '"$request" $status $body_bytes_sent '   '"$http_referer" "$http_user_agent" "$gzip_ratio"';
+	
+	server {
+		
+		listen 666 ;
+		#压缩
+		gzip on;
+		#默认情况下，NGINX仅使用MIME类型text/html压缩响应。要使用其他MIME类型压缩响应，请包含gzip_types指令并列出其他类型
+		#gzip_types text/plain application/xml application/x-javascript text/css;
+		#要指定要压缩的响应的最小长度，请使用gzip_min_length指令。 默认值为20字节(可将此处调整为1000)：
+		gzip_min_length 1000;
+		#gzip_proxied指令具有指示NGINX在响应中检查Cache-Control头字段的参数，如果值为no-cache, no-store 或 private，则压缩响应。 另外，您必须包括 Expires 参数以用来检查Expires头域的值。 这些参数在以下示例中与auth参数一起设置，该参数检查Authorization头字段的存在(授权响应特定于最终用户，并且通常不被缓存)：
+		gzip_proxied no-cache no-store private expired auth;
+		#要将文件的压缩版本发送到客户端而不是常规文件，请在适当的上下文中将gzip_static指令设置为on。
+		gzip_static on;
+		
+		server_name                   www.magedu.com;
+		
+		
+		location /wxgzh_nsyh/ {  
+			root F:/05_宇信科技svn/05_农商银行/bak/;  
+			access_log  D:/09_software/54_nginx-1.13.9/nginx-1.13.9/logs/66601.log compression;
+		}
+		
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

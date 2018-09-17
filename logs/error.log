@@ -232,3 +232,238 @@ ginxData\www" failed (123: The filename, directory name, or volume label syntax 
 2018/09/11 15:48:56 [notice] 2712#8092: signal process started
 2018/09/11 15:49:05 [notice] 16404#15984: signal process started
 2018/09/11 16:03:36 [notice] 9292#15460: signal process started
+2018/09/14 15:54:42 [emerg] 15780#13072: unknown log format "main" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:23
+2018/09/14 15:55:30 [emerg] 4612#10088: unknown log format "main" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:23
+2018/09/14 15:56:25 [emerg] 16084#13144: unknown log format "main" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:23
+2018/09/14 15:57:32 [notice] 12036#14448: using the "select" event method
+2018/09/14 15:57:32 [notice] 12036#14448: nginx/1.13.9
+2018/09/14 15:57:32 [info] 12036#14448: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/14 15:57:32 [notice] 12036#14448: start worker processes
+2018/09/14 15:57:32 [notice] 12036#14448: start worker process 1252
+2018/09/14 15:57:32 [notice] 1252#14692: nginx/1.13.9
+2018/09/14 15:57:32 [info] 1252#14692: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/14 15:57:32 [notice] 1252#14692: create thread 15940
+2018/09/14 15:57:32 [notice] 1252#14692: create thread 14876
+2018/09/14 15:57:32 [notice] 1252#14692: create thread 15732
+2018/09/14 15:57:50 [error] 1252#15940: *2 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/vxsp/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost:801", referrer: "http://localhost:801/"
+2018/09/14 15:58:50 [info] 1252#15940: *3 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:801
+2018/09/17 10:49:34 [notice] 10308#1208: using the "select" event method
+2018/09/17 10:49:34 [notice] 10308#1208: nginx/1.13.9
+2018/09/17 10:49:34 [info] 10308#1208: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 10:49:34 [notice] 10308#1208: start worker processes
+2018/09/17 10:49:34 [notice] 10308#1208: start worker process 9612
+2018/09/17 10:49:34 [notice] 9612#5268: nginx/1.13.9
+2018/09/17 10:49:34 [info] 9612#5268: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 10:49:34 [notice] 9612#5268: create thread 2712
+2018/09/17 10:49:34 [notice] 9612#5268: create thread 12556
+2018/09/17 10:49:34 [notice] 9612#5268: create thread 7648
+2018/09/17 10:50:03 [error] 9612#2712: *1 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/vxsp/vxsp/index.html" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /vxsp/index.html?__hbt=1537152423239 HTTP/1.1", host: "127.0.0.1:801"
+2018/09/17 10:50:03 [error] 9612#2712: *1 CreateFile() "D:/06_hBuilderWorkspace/LayuiDemo/vxsp/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1:801", referrer: "http://127.0.0.1:801/vxsp/index.html?__hbt=1537152423239"
+2018/09/17 10:50:55 [info] 9612#2712: *2 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:801
+2018/09/17 10:54:41 [notice] 1480#12952: signal process started
+2018/09/17 10:54:41 [notice] 10308#1208: reconfiguring
+2018/09/17 10:54:41 [notice] 10308#1208: using the "select" event method
+2018/09/17 10:54:41 [notice] 10308#1208: start worker processes
+2018/09/17 10:54:41 [notice] 10308#1208: start worker process 10912
+2018/09/17 10:54:41 [notice] 10912#7936: nginx/1.13.9
+2018/09/17 10:54:41 [info] 10912#7936: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 10:54:41 [notice] 9612#5268: gracefully shutting down
+2018/09/17 10:54:41 [notice] 10912#7936: create thread 7056
+2018/09/17 10:54:41 [notice] 9612#12556: exiting
+2018/09/17 10:54:41 [notice] 10912#7936: create thread 13888
+2018/09/17 10:54:41 [notice] 10912#7936: create thread 3572
+2018/09/17 10:54:41 [notice] 9612#2712: exiting
+2018/09/17 10:54:41 [notice] 9612#5268: exit
+2018/09/17 10:54:41 [notice] 10308#1208: worker process 9612 exited with code 0
+2018/09/17 10:54:47 [error] 10912#7056: *6 directory index of "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1"
+2018/09/17 10:54:48 [error] 10912#7056: *6 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/"
+2018/09/17 10:55:13 [notice] 4052#4632: signal process started
+2018/09/17 10:55:13 [notice] 10308#1208: reconfiguring
+2018/09/17 10:55:13 [notice] 10308#1208: using the "select" event method
+2018/09/17 10:55:13 [notice] 10308#1208: start worker processes
+2018/09/17 10:55:13 [notice] 10308#1208: start worker process 12980
+2018/09/17 10:55:13 [notice] 12980#2452: nginx/1.13.9
+2018/09/17 10:55:13 [info] 12980#2452: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 10:55:13 [notice] 12980#2452: create thread 11036
+2018/09/17 10:55:13 [notice] 10912#7936: gracefully shutting down
+2018/09/17 10:55:13 [notice] 10912#13888: exiting
+2018/09/17 10:55:13 [notice] 12980#2452: create thread 9832
+2018/09/17 10:55:13 [notice] 12980#2452: create thread 12964
+2018/09/17 10:55:16 [info] 10912#7056: *7 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2018/09/17 10:55:16 [info] 10912#7056: *8 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:801
+2018/09/17 10:55:16 [notice] 10912#7056: exiting
+2018/09/17 10:55:16 [notice] 10912#7936: exit
+2018/09/17 10:55:16 [notice] 10308#1208: worker process 10912 exited with code 0
+2018/09/17 11:07:47 [emerg] 9760#520: invalid URL prefix in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:55
+2018/09/17 11:08:10 [notice] 11044#15252: signal process started
+2018/09/17 11:08:10 [notice] 10308#1208: reconfiguring
+2018/09/17 11:08:10 [notice] 10308#1208: using the "select" event method
+2018/09/17 11:08:10 [notice] 10308#1208: start worker processes
+2018/09/17 11:08:10 [notice] 10308#1208: start worker process 14340
+2018/09/17 11:08:10 [notice] 14340#2704: nginx/1.13.9
+2018/09/17 11:08:10 [info] 14340#2704: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 11:08:10 [notice] 14340#2704: create thread 14460
+2018/09/17 11:08:10 [notice] 14340#2704: create thread 14852
+2018/09/17 11:08:10 [notice] 12980#2452: gracefully shutting down
+2018/09/17 11:08:10 [notice] 14340#2704: create thread 11576
+2018/09/17 11:08:10 [notice] 12980#9832: exiting
+2018/09/17 11:08:11 [notice] 12980#11036: exiting
+2018/09/17 11:08:11 [notice] 12980#2452: exit
+2018/09/17 11:08:11 [notice] 10308#1208: worker process 12980 exited with code 0
+2018/09/17 11:08:13 [error] 14340#14460: *31 directory index of "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1"
+2018/09/17 11:09:10 [notice] 14340#11576: http file cache: D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_cache_path 0.000M, bsize: 4096
+2018/09/17 11:09:13 [info] 14340#14460: *32 client timed out (10060: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond) while waiting for request, client: 127.0.0.1, server: 0.0.0.0:80
+2018/09/17 11:10:42 [crit] 14340#14460: *34 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000004" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:42 [crit] 14340#14460: *31 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000005" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:42 [crit] 14340#14460: *44 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000006" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:42 [crit] 14340#14460: *47 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000007" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:42 [crit] 14340#14460: *48 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000008" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:42 [crit] 14340#14460: *53 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000009" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:46 [crit] 14340#14460: *56 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000010" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:46 [crit] 14340#14460: *57 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000011" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:46 [crit] 14340#14460: *62 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000012" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:51 [crit] 14340#14460: *65 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000013" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:52 [crit] 14340#14460: *68 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000014" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:52 [crit] 14340#14460: *69 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000015" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:52 [crit] 14340#14460: *74 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000016" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:53 [crit] 14340#14460: *77 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000017" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:53 [crit] 14340#14460: *78 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000018" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:53 [crit] 14340#14460: *83 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000019" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:54 [crit] 14340#14460: *86 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000020" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:54 [crit] 14340#14460: *87 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000021" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:54 [crit] 14340#14460: *92 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/cache/proxy_temp_path/0000000022" failed (3: The system cannot find the path specified) while reading upstream, client: 127.0.0.1, server: , request: "GET /index.html HTTP/1.1", upstream: "http://127.0.0.1:801/index.html", host: "127.0.0.1"
+2018/09/17 11:10:58 [notice] 14816#12140: signal process started
+2018/09/17 11:10:58 [notice] 10308#1208: reconfiguring
+2018/09/17 11:10:58 [notice] 10308#1208: using the "select" event method
+2018/09/17 11:10:58 [notice] 10308#1208: start worker processes
+2018/09/17 11:10:58 [notice] 10308#1208: start worker process 15136
+2018/09/17 11:10:58 [notice] 15136#1508: nginx/1.13.9
+2018/09/17 11:10:58 [info] 15136#1508: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 11:10:58 [notice] 14340#2704: gracefully shutting down
+2018/09/17 11:10:58 [notice] 15136#1508: create thread 12952
+2018/09/17 11:10:58 [notice] 14340#14852: exiting
+2018/09/17 11:10:58 [notice] 15136#1508: create thread 4076
+2018/09/17 11:10:58 [notice] 15136#1508: create thread 10800
+2018/09/17 11:10:59 [notice] 14340#14460: exiting
+2018/09/17 11:10:59 [notice] 14340#2704: exit
+2018/09/17 11:10:59 [notice] 10308#1208: worker process 14340 exited with code 0
+2018/09/17 11:11:03 [error] 15136#12952: *96 CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/api/file/test000.file" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: , request: "GET /api/file/test000.file?time=1537153863923 HTTP/1.1", host: "127.0.0.1", referrer: "http://127.0.0.1/index.html"
+2018/09/17 11:11:51 [notice] 9364#15144: signal process started
+2018/09/17 11:11:51 [notice] 10308#1208: reconfiguring
+2018/09/17 11:11:51 [notice] 10308#1208: using the "select" event method
+2018/09/17 11:11:51 [notice] 10308#1208: start worker processes
+2018/09/17 11:11:51 [notice] 10308#1208: start worker process 15160
+2018/09/17 11:11:51 [notice] 15160#6316: nginx/1.13.9
+2018/09/17 11:11:51 [info] 15160#6316: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 11:11:51 [notice] 15160#6316: create thread 14796
+2018/09/17 11:11:51 [notice] 15136#1508: gracefully shutting down
+2018/09/17 11:11:51 [notice] 15136#4076: exiting
+2018/09/17 11:11:51 [notice] 15160#6316: create thread 15128
+2018/09/17 11:11:51 [notice] 15160#6316: create thread 11516
+2018/09/17 11:11:51 [notice] 15136#12952: exiting
+2018/09/17 11:11:51 [notice] 15136#1508: exit
+2018/09/17 11:11:51 [notice] 10308#1208: worker process 15136 exited with code 0
+2018/09/17 11:13:20 [notice] 13080#1312: signal process started
+2018/09/17 11:13:20 [notice] 10308#1208: reconfiguring
+2018/09/17 11:13:20 [notice] 10308#1208: using the "select" event method
+2018/09/17 11:13:20 [notice] 10308#1208: start worker processes
+2018/09/17 11:13:20 [notice] 10308#1208: start worker process 10940
+2018/09/17 11:13:21 [notice] 10940#14980: nginx/1.13.9
+2018/09/17 11:13:21 [info] 10940#14980: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 11:13:21 [notice] 10940#14980: create thread 11044
+2018/09/17 11:13:21 [notice] 15160#6316: gracefully shutting down
+2018/09/17 11:13:21 [notice] 15160#15128: exiting
+2018/09/17 11:13:21 [notice] 10940#14980: create thread 14700
+2018/09/17 11:13:21 [notice] 10940#14980: create thread 15208
+2018/09/17 11:13:21 [notice] 15160#14796: exiting
+2018/09/17 11:13:21 [notice] 15160#6316: exit
+2018/09/17 11:13:21 [notice] 10308#1208: worker process 15160 exited with code 0
+2018/09/17 11:13:30 [error] 10940#11044: *106 directory index of "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/html/" is forbidden, client: 127.0.0.1, server: , request: "GET / HTTP/1.1", host: "127.0.0.1"
+2018/09/17 11:15:53 [notice] 3280#6336: signal process started
+2018/09/17 11:15:53 [notice] 10308#1208: reconfiguring
+2018/09/17 11:15:53 [notice] 10308#1208: using the "select" event method
+2018/09/17 11:15:53 [notice] 10308#1208: start worker processes
+2018/09/17 11:15:53 [notice] 10308#1208: start worker process 14848
+2018/09/17 11:15:53 [notice] 14848#11112: nginx/1.13.9
+2018/09/17 11:15:53 [info] 14848#11112: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 11:15:53 [notice] 10940#14980: gracefully shutting down
+2018/09/17 11:15:53 [notice] 14848#11112: create thread 3472
+2018/09/17 11:15:53 [notice] 10940#14700: exiting
+2018/09/17 11:15:53 [notice] 14848#11112: create thread 2248
+2018/09/17 11:15:53 [notice] 14848#11112: create thread 6528
+2018/09/17 11:15:54 [notice] 10940#11044: exiting
+2018/09/17 11:15:54 [notice] 10940#14980: exit
+2018/09/17 11:15:54 [notice] 10308#1208: worker process 10940 exited with code 0
+2018/09/17 11:16:30 [notice] 14564#14568: signal process started
+2018/09/17 11:16:30 [notice] 10308#1208: reconfiguring
+2018/09/17 11:16:30 [notice] 10308#1208: using the "select" event method
+2018/09/17 11:16:30 [notice] 10308#1208: start worker processes
+2018/09/17 11:16:30 [notice] 10308#1208: start worker process 9208
+2018/09/17 11:16:30 [notice] 9208#15168: nginx/1.13.9
+2018/09/17 11:16:30 [info] 9208#15168: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 11:16:30 [notice] 14848#11112: gracefully shutting down
+2018/09/17 11:16:30 [notice] 9208#15168: create thread 11332
+2018/09/17 11:16:30 [notice] 14848#2248: exiting
+2018/09/17 11:16:30 [notice] 9208#15168: create thread 2368
+2018/09/17 11:16:30 [notice] 9208#15168: create thread 15172
+2018/09/17 11:16:30 [notice] 14848#3472: exiting
+2018/09/17 11:16:30 [notice] 14848#11112: exit
+2018/09/17 11:16:30 [notice] 10308#1208: worker process 14848 exited with code 0
+2018/09/17 11:17:07 [notice] 15332#15068: signal process started
+2018/09/17 11:17:07 [notice] 10308#1208: reconfiguring
+2018/09/17 11:17:07 [notice] 10308#1208: using the "select" event method
+2018/09/17 11:17:07 [notice] 10308#1208: start worker processes
+2018/09/17 11:17:07 [notice] 10308#1208: start worker process 14956
+2018/09/17 11:17:07 [notice] 14956#14896: nginx/1.13.9
+2018/09/17 11:17:07 [info] 14956#14896: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 11:17:07 [notice] 14956#14896: create thread 4928
+2018/09/17 11:17:07 [notice] 9208#15168: gracefully shutting down
+2018/09/17 11:17:07 [notice] 9208#2368: exiting
+2018/09/17 11:17:07 [notice] 14956#14896: create thread 9900
+2018/09/17 11:17:07 [notice] 14956#14896: create thread 2260
+2018/09/17 11:17:07 [notice] 9208#11332: exiting
+2018/09/17 11:17:07 [notice] 9208#15168: exit
+2018/09/17 11:17:07 [notice] 10308#1208: worker process 9208 exited with code 0
+2018/09/17 15:59:01 [notice] 3328#344: signal process started
+2018/09/17 15:59:01 [notice] 10308#1208: reconfiguring
+2018/09/17 15:59:01 [notice] 10308#1208: using the "select" event method
+2018/09/17 15:59:01 [notice] 10308#1208: start worker processes
+2018/09/17 15:59:01 [notice] 10308#1208: start worker process 13644
+2018/09/17 15:59:01 [notice] 13644#14756: nginx/1.13.9
+2018/09/17 15:59:01 [info] 13644#14756: OS: 260200 build:9200, "", suite:100, type:1
+2018/09/17 15:59:01 [notice] 13644#14756: create thread 4116
+2018/09/17 15:59:01 [notice] 13644#14756: create thread 14636
+2018/09/17 15:59:01 [notice] 13644#14756: create thread 14056
+2018/09/17 15:59:01 [notice] 14956#14896: gracefully shutting down
+2018/09/17 15:59:01 [notice] 14956#9900: exiting
+2018/09/17 15:59:04 [notice] 14956#4928: exiting
+2018/09/17 15:59:04 [notice] 14956#14896: exit
+2018/09/17 15:59:04 [notice] 10308#1208: worker process 14956 exited with code 0
+2018/09/17 16:08:48 [emerg] 5468#5340: invalid event type "epoll" in D:\09_software\54_nginx-1.13.9\nginx-1.13.9/conf/nginx.conf:14
+2018/09/17 16:09:06 [notice] 14100#17016: signal process started
+2018/09/17 16:09:06 [notice] 10308#1208: reconfiguring
+2018/09/17 16:09:06 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 16:14:34 [notice] 16996#15320: signal process started
+2018/09/17 16:14:34 [notice] 10308#1208: reconfiguring
+2018/09/17 16:14:34 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 16:15:12 [notice] 12324#6224: signal process started
+2018/09/17 16:15:12 [notice] 10308#1208: reconfiguring
+2018/09/17 16:15:12 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 16:56:20 [notice] 4112#16732: signal process started
+2018/09/17 16:56:20 [notice] 10308#1208: reconfiguring
+2018/09/17 16:56:20 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 17:28:23 [notice] 14384#4112: signal process started
+2018/09/17 17:28:23 [notice] 10308#1208: reconfiguring
+2018/09/17 17:28:23 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 17:28:52 [notice] 15632#13128: signal process started
+2018/09/17 17:28:52 [notice] 10308#1208: reconfiguring
+2018/09/17 17:28:52 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 17:29:16 [notice] 2404#14704: signal process started
+2018/09/17 17:29:16 [notice] 10308#1208: reconfiguring
+2018/09/17 17:29:16 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 17:29:29 [notice] 16980#724: signal process started
+2018/09/17 17:29:29 [notice] 10308#1208: reconfiguring
+2018/09/17 17:29:29 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
+2018/09/17 19:01:18 [notice] 15260#15952: signal process started
+2018/09/17 19:01:18 [notice] 10308#1208: reconfiguring
+2018/09/17 19:01:18 [emerg] 10308#1208: CreateFile() "D:\09_software\54_nginx-1.13.9\nginx-1.13.9/log/nginx/access.log" failed (3: The system cannot find the path specified)
